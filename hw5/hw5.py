@@ -1,10 +1,6 @@
-import csv
 import json
 
-
-# ------------------------------------
 # Load stock prices from CSV file
-# ------------------------------------
 def loadPrices(ticker):
     stock_prices = []
 
@@ -18,10 +14,7 @@ def loadPrices(ticker):
 
     return stock_prices
 
-
-# ------------------------------------
 # Mean Reversion Strategy
-# ------------------------------------
 def meanReversionStrategy(ticker,stock_prices):
     purchase_price = 0
     total_profit = 0
@@ -68,9 +61,7 @@ def meanReversionStrategy(ticker,stock_prices):
     return total_profit, percent_return
 
 
-# ------------------------------------
 # Simple Moving Average Strategy
-# ------------------------------------
 def simpleMovingAverageStrategy(ticker,stock_prices):
     purchase_price = 0
     total_profit = 0
@@ -117,17 +108,12 @@ def simpleMovingAverageStrategy(ticker,stock_prices):
     return total_profit, percent_return
 
 
-# ------------------------------------
 # Save results to JSON file
-# ------------------------------------
 def saveResults(results):
     with open("results.json", "w") as file:
         json.dump(results, file, indent=4)
 
 
-# ------------------------------------
-# Main Program
-# ------------------------------------
 tickers = [
     "AAPL",
     "GOOG",
