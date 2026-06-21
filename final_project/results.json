@@ -1,0 +1,14 @@
+{
+    "summary": {
+        "total_days_tracked": 120,
+        "tracked_timeframe": "From 2026-06-17 to 2025-12-26"
+    },
+    "analysis_results_usd": {
+        "maximum_debt": 39293074039354.64,
+        "minimum_debt": 38372153717621.09,
+        "average_debt": 38853183936465.46,
+        "latest_debt": 39283052266270.91,
+        "debt_120days_ago": 38380536147996.03,
+        "net_debt_growth_in_period": 902516118274.875
+    }
+}
